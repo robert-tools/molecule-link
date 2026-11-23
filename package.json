@@ -1,15 +1,21 @@
 {
-    "name": "@robert.tools/sample",
-    "version": "1.1.10",
-    "description": "<description>",
+    "name": "@robert.tools/molecule-link",
+    "version": "1.0.0",
+    "description": "A component to provide links.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "exports": {
-        ".": "./dist/index.js"
+        ".": {
+            "default": "./dist/index.js"
+        },
+        "./index.njk": "./src/index.njk",
+        "./index.css": "./src/index.css"
     },
     "files": [
-        "dist"
-    ],
+        "dist",
+        "src/index.njk",
+        "src/index.css"
+    ],    
     "scripts": {
         "init": "robi init",
         "release": "robi release",
@@ -25,20 +31,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/robert-tools/<name>.git"
+        "url": "git+https://github.com/robert-tools/molecule-link.git"
     },
     "bugs": {
-        "url": "https://github.com/robert-tools/<name>/issues"
+        "url": "https://github.com/robert-tools/molecule-link/issues"
     },
-    "homepage": "https://github.com/robert-tools/<name>#readme",
+    "homepage": "https://github.com/robert-tools/molecule-link#readme",
     "keywords": [
         "typescript",
         "node",
-        "<name>",
+        "molecule-link",
         "robert.tools"
     ],
-    "author": "<author>",
-    "license": "<license>",
+    "author": "Robert Willemelis",
+    "license": "MIT",
     "engines": {
         "node": ">=22"
     },

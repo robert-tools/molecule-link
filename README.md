@@ -1,29 +1,46 @@
-# 🗂️ @robert.tools/sample
+# 🗂️ @robert.tools/molecule-link
 
-<description>
+A component to provide links.
 
 ## 📜 Usage
 
 ### 🟢 Installation
 
 ```bash
-npm install @robert.tools/sample
+npm install @robert.tools/molecule-link
 ```
 
 ### 📝 Sample usage
 
-```typescript
-import { <name> } from '@robert.tools/sample';
+#### prerequisites
 
-<name>('hello'); // '<name>: hello'
+- define css variables
+- filter: `safe` and `url`are default filter
+- dependant components: `@robert.tools/atom-text`
+
+#### Template
+
+Use the link component as shown below:
+
+```html
+{{ component("molecule/link", {}) }}
 ```
 
-## 🗃️ commands
+#### CSS
 
-After an npm install with `npm i` the following commands are available:
+Use the basic styling
 
-* initialize placeholders: `npm run init <semantic>`
-* release a new version: `npm run release <semantic>`
+```css
+@import '@robert.tools/molecule-link/src/index.css';
+```
+
+#### TypeScript
+
+Include TypeScript by importing the link component
+
+```typescript
+import * as MoleculeLink from '@robert.tools/molecule-link';
+```
 
 ## ⚖️ Notes
 
