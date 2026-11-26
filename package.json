@@ -1,6 +1,6 @@
 {
     "name": "@robert.tools/molecule-link",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A component to provide links.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -15,7 +15,7 @@
         "dist",
         "src/index.njk",
         "src/index.css"
-    ],    
+    ],
     "scripts": {
         "init": "robi init",
         "release": "robi release",

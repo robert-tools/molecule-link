@@ -15,6 +15,9 @@
     {% endif %} 
     class="{{ css }} {{params.class_modifier}}" href="{{ params.url | url | safe}}"
     >
+    {% if params.pre_html %}
+        {{params.pre_html | safe}}
+    {% endif %}
    {{ component("atom/text", { text: params.text, tag: tag, css: text_css }) }}
 
     {% if params.post_html %}
@@ -22,6 +25,9 @@
     {% endif %}
 </a>
 {% else %}
+    {% if params.pre_html %}
+        {{params.pre_html | safe}}
+    {% endif %}
     {{ component("atom/text", { text: params.text, tag: tag, css: text_css }) }}
 
     {% if params.post_html %}
